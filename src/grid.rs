@@ -91,7 +91,7 @@ use crate::size;
 /// grid.insert_row(1, vec![3, 4]);
 /// ```
 ///
-#[derive(Debug, Eq, PartialEq)]
+#[derive(Debug, Eq, PartialEq, Clone)]
 pub struct Grid<T> {
     size: Size,
     rows: Vec<Vec<T>>,
